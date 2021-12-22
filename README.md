@@ -1,6 +1,6 @@
 ## Prerequisite for running project
 -JDK must be installed.\
--PostgreSQL must be installed than u should create a database named `googleapiproject`. \
+-PostgreSQL must be installed than u should create a database named `googleapiproject3`. \
 -username and password for database is `postgres`. You can change it from `src.main.resources.application.properties`. \
 -You must have an `API_KEY` from google and change the `PlacesServiceImpl line 30` 
 
