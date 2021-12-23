@@ -26,8 +26,8 @@ public class PlacesServiceImpl implements PlacesService {
 
     @Override
     public Places getPlaces(double longitude, double latitude, int radius) throws JsonProcessingException {
-        String url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + longitude + ","
-                + latitude + "&radius=" + radius + "&key=<API_KEY>" ;
+        String url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + latitude + ","
+                + longitude + "&radius=" + radius + "&key=<API_KEY>" ;
         String urlForService = "http://localhost:8070/?longitude=" + longitude + "&latitude="
                 + latitude + "&radius=" + radius;
         Places placesFromDb = placesRepository.getByUrl(urlForService);
